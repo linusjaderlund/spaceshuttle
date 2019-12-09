@@ -1,0 +1,25 @@
+{
+  "name": "spaceshuttle",
+  "version": "0.0.1",
+  "description": "\"Command-line tool for easy deploy to sftp server\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linusjaderlund/spaceshuttle.git"
+  },
+  "keywords": [
+    "deploy",
+    "sftp",
+    "command-line",
+    "tool"
+  ],
+  "author": "Linus Jäderlund",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/linusjaderlund/spaceshuttle/issues"
+  },
+  "homepage": "https://github.com/linusjaderlund/spaceshuttle#readme"
+}
