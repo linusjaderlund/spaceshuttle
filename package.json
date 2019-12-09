@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/linusjaderlund/spaceshuttle/issues"
   },
-  "homepage": "https://github.com/linusjaderlund/spaceshuttle#readme"
+  "homepage": "https://github.com/linusjaderlund/spaceshuttle#readme",
+  "dependencies": {
+    "ssh2-sftp-client": "^4.3.0"
+  }
 }
