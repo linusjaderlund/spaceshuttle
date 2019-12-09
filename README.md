@@ -6,4 +6,4 @@
 
 ## Warning!
 
-This tool is still under development and currently not working.
+This tool is still under development and may not work. Instructions etc are to come.
