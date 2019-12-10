@@ -6,7 +6,7 @@
 
 ## Warning
 
-This tool is still under development and may not work. First stable version will soon be available after some testing and adding of more functionality.
+This tool is still under development and may not work. First stable version will soon be available after some testing and adding of more functionality. **Not yet fully available at npmjs.com as package**
 
 ## Installation
 
