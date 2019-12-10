@@ -1,6 +1,6 @@
 {
   "name": "spaceshuttle-deploy",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "\"Command-line tool for easy deploy to sftp server\"",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/linusjaderlund/spaceshuttle.git"
+    "url": "git+https://github.com/linusjaderlund/spaceshuttle-deploy.git"
   },
   "keywords": [
     "deploy",
@@ -20,11 +20,11 @@
     "tool"
   ],
   "author": "Linus Jäderlund",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/linusjaderlund/spaceshuttle/issues"
+    "url": "https://github.com/linusjaderlund/spaceshuttle-deploy/issues"
   },
-  "homepage": "https://github.com/linusjaderlund/spaceshuttle#readme",
+  "homepage": "https://github.com/linusjaderlund/spaceshuttle-deploy#readme",
   "dependencies": {
     "ssh2-sftp-client": "^4.3.0"
   }
