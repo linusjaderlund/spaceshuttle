@@ -46,7 +46,7 @@ Options are formatted `<key>=<value>` and can be used in combination separated b
   - **default**: empty string (`''`) if private key is specified
 - **localPath** - path to directory which you want to deploy
   - **default**: current terminal path
-- **serverPath** - path to directory which you want to deploy to
+- **serverPath** - path to directory which you want to deploy to, **note**: relative to server root
   - **default**: empty string (`''`), root of server
 
 ## sftp.json options
