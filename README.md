@@ -1,47 +1,40 @@
-# 🚀 spaceshuttle
+# 🚀 spaceshuttle-deploy
 
 ## About
 
-**spaceshuttle** is a command-line tool for easy deploy of your code to a server. The tool wraps around [ssh2-sftp-client](https://www.npmjs.com/package/ssh2-sftp-client) (developed by [jyu213](https://www.npmjs.com/~jyu213) and [theophilusx](https://www.npmjs.com/~theophilusx)) to create a convenient way to deploy. Originally developed to be used with `npx` to easily configure a build and deploy pipeline with `npm run`.
+**spaceshuttle-deploy** is a command-line tool for easy deploy of your code to a server. The tool wraps around [ssh2-sftp-client](https://www.npmjs.com/package/ssh2-sftp-client) (developed by [jyu213](https://www.npmjs.com/~jyu213) and [theophilusx](https://www.npmjs.com/~theophilusx)) to create a convenient way to deploy. Originally developed to be used with `npx` to easily configure a build and deploy pipeline with `npm run`.
 
 ## Warning
 
-This tool is still under development and may not work. First stable version will soon be available after some testing and adding of more functionality. **Not yet fully available at npmjs.com as package**
+This tool is still under development and may not work. First stable version will soon be available after some testing and adding of more functionality.
 
-## Installation
-
-### Execute from npm server
+## Usage with **npx**
 
 ``` bash
-npx spaceshuttle
-```
-
-### Save and run globally
-
-``` bash
-npm i --g spaceshuttle
-```
-
-### Save and run locally (not encouraged)
-
-``` bash
-npm i -D spaceshuttle
-```
-
-## Usage
-
-``` bash
-npx spaceshuttle [options]
+npx spaceshuttle-deploy [options]
 # option format: <key>=<value>
 ```
 
-Example
+## Usage with **npm install** globally
 
 ``` bash
-npx spaceshuttle host=sftp.yourhost.com privateKey=~/.ssh/id_rsa serverPath=www
+npm install -g spaceshuttle-deploy
 ```
 
-**Note:** `npx` can be neglected if spaceshuttle is installed globally
+and then...
+
+``` bash
+spaceshuttle-deploy [options]
+# option format: <key>=<value>
+```
+
+## Example usage
+
+``` bash
+npx spaceshuttle-deploy host=sftp.yourhost.com privateKey=~/.ssh/id_rsa serverPath=www
+```
+
+**Note:** `npx` can be neglected if spaceshuttle-deploy is installed globally
 
 ## Command-line options
 
@@ -64,7 +57,7 @@ Options are formatted `<key>=<value>` and can be used in combination separated b
 
 Same options as for the command line can be set using sftp.json
 and should be present in the same directory as your terminal is
-pointing when running `spaceshuttle`. **Note that any options set in the command-line will override sftp.json**. Example of such file could look like this:
+pointing when running `spaceshuttle-deploy`. **Note that any options set in the command-line will override sftp.json**. Example of such file could look like this:
 
 ``` json
 {
