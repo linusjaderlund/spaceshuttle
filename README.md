@@ -4,10 +4,6 @@
 
 **spaceshuttle-deploy** is a command-line tool for easy deploy of your code to a server. The tool wraps around [ssh2-sftp-client](https://www.npmjs.com/package/ssh2-sftp-client) (developed by [jyu213](https://www.npmjs.com/~jyu213) and [theophilusx](https://www.npmjs.com/~theophilusx)) to create a convenient way to deploy. Originally developed to be used with `npx` to easily configure a build and deploy pipeline with `npm run`.
 
-## Warning
-
-This tool is still under development and may not work. First stable version will soon be available after some testing and adding of more functionality.
-
 ## Usage with **npx**
 
 ``` bash
