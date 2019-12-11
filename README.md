@@ -48,6 +48,7 @@ Options are formatted `<key>=<value>` and can be used in combination separated b
   - **default**: current terminal path
 - **serverPath** - path to directory on server which you want to deploy to
   - **default**: empty string (`''`), root of server
+- **cleanServerPath** - determines if server path will be cleaned of old data [(read more)](#cleanserverpath)
 
 ## sftp.json options
 
@@ -65,3 +66,10 @@ pointing when running `spaceshuttle-deploy`. **Note that any options set in the 
   "password": "******"
 }
 ```
+
+## Options in detail
+
+### cleanServerPath
+
+By setting this to `true` **spaceshuttle-deploy** will create a temporary directory and upload everything from the local path to that directory. Once the transfer is done the old server path/directory will be deleted and the temporary directory will be renamed and replace the deleted one. Setting this to `true` requires `serverPath` to point at a directory on the server and not its root, this is due to security reasons. **Warning**: be very cautious when setting this to `true` since everything on the server will be deleted.  
+**default**: `undefined/false`
