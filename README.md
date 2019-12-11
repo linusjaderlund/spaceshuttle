@@ -71,5 +71,5 @@ pointing when running `spaceshuttle-deploy`. **Note that any options set in the 
 
 ### cleanServerPath
 
-By setting this to `true` **spaceshuttle-deploy** will create a temporary directory and upload everything from the local path to that directory. Once the transfer is done the old server path/directory will be deleted and the temporary directory will be renamed and replace the deleted one. Setting this to `true` requires `serverPath` to point at a directory on the server and not its root, this is due to security reasons. **Warning**: be very cautious when setting this to `true` since everything on the server will be deleted.  
+By setting this to `true` **spaceshuttle-deploy** creates a temporary directory and uploads everything from the local path to that directory. Once the transfer is complete, the old server path/directory gets deleted, and the temporary directory gets renamed to replace the deleted ones. Setting this to `true` requires `serverPath` to point at a directory on the server and not its root, this is due to security reasons. **Warning**: be very cautious when setting this to `true` since everything on the server gets deleted.  
 **default**: `undefined/false`
