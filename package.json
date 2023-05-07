@@ -26,6 +26,6 @@
   },
   "homepage": "https://github.com/linusjaderlund/spaceshuttle-deploy#readme",
   "dependencies": {
-    "ssh2-sftp-client": "^4.3.0"
+    "ssh2-sftp-client": "^9.1.0"
   }
 }
